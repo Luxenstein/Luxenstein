@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Княжество Люксенштейн</title>
+  <style>
+    /* CSS для стилизации сайта */
+    #header {
+      text-align: center;
+    }
+    
+    #content {
+      margin: 0 auto;
+      width: 80%;
+    }
+    
+    .slide {
+      display: none;
+    }
+  </style>
+  <script>
+    // JavaScript для переключения слайдов
+    function showSlide(slideIndex) {
+      var slides = document.getElementsByClassName('slide');
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slides[slideIndex].style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div id="header">
+    <h1>Княжество Люксенштейн</h1>
+  </div>
+  <div id="content">
+    <ul>
+      <li><a href="#" onclick="showSlide(0)">Государственные знаки</a></li>
+      <li><a href="#" onclick="showSlide(1)">Конституция</a></li>
+      <li><a href="#" onclick="showSlide(2)">Уголовный кодекс</a></li>
+      <li><a href="#" onclick="showSlide(3)">Карты</a></li>
+    </ul>
+    <div class="slide" id="slide1" style="text-align: center;">
+      <h2>Государственные знаки</h2>
+	  <img src="flag.png" alt="Княжество Люксенштейн" width="500" height="300">
+      <p>Флаг Княжества Люксенштейн.</p>
+	  <p>Две горизонтально расположеные полосы синего и бордового цвета с соотнешением 3:5. По середине расположено изображение льва в цвета флага. По верхним углам расположены 2 орла которые держут в лапах копьё. <br> Синий — цвет грозового облака, бордовый — цвет тлеющих угольков в камине, золотой цвет льва показывает нашему народу, что страна и князь объединены сердцем и духом.  </p>
+	  <img src="gerb.png" alt="Княжество Люксенштейн" width="272" height="472">
+	  <p>Герб Княжества Люксенштейн.</p>
+	  <p>Щит в полоску окрашеный синим и бордовым цветом, ( 9 полосок ), по середине расположеный лев. над щитом сверху расположенна корона. <br> Синий — цвет грозового облака, бордовый — цвет тлеющих угольков в камине, золотой цвет льва и основания короны показывает нашему народу, что государство и князь объединены сердцем и духом.  
+</p>
+    </div>
+    <div class="slide" id="slide2">
+      <h2>Конституция</h2>
+      <p>Здесь будет информация о Конституции Княжества Люксенштейн.</p>
+    </div>
+    <div class="slide" id="slide3">
+      <h2>Уголовный кодекс</h2>
+      <p>Здесь будет информация об Уголовном кодексе Княжества Люксенштейн.</p>
+    </div>
+    <div class="slide" id="slide4">
+      <h2>Карты</h2>
+      <p>Здесь будет информация о картах Княжества Люксенштейн.</p>
+    </div>
+  </div>
+  
+  <script>
+    // Показать первый слайд по умолчанию
+    showSlide(0);
+  </script>
+</body>
+</html>
