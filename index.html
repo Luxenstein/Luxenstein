@@ -6,6 +6,7 @@
   <title>Люксенштейн</title>
   <style>
     /* CSS для стилизации сайта */
+    
     #header {
       text-align: center;
     }
@@ -18,6 +19,8 @@
     .slide {
       display: none;
     }
+
+
   </style>
   <script>
     // JavaScript для переключения слайдов
@@ -36,12 +39,34 @@
     <h1>Княжество Люксенштейн</h1>
   </div>
   <div id="content">
-    <ul>
-      <li><a href="#" onclick="showSlide(0)">Государственные символы</a></li>
-      <li><a href="#" onclick="showSlide(1)">Конституция</a></li>
-      <li><a href="#" onclick="showSlide(2)">Уголовный кодекс</a></li>
-      <li><a href="#" onclick="showSlide(3)">Карты</a></li>
-    </ul>
+    <style>
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .button:nth-child(1) { background-color: #d1535f; }
+      .button:nth-child(2) { background-color: #00657f; }
+      .button:nth-child(3) { background-color: #0f490f; }
+      .button:nth-child(4) { background-color: #ff9238; }
+      .button:nth-child(5) { background-color: #5c717e; }
+    </style>
+    
+    <p style="text-align: center;">
+      <a href="#" onclick="showSlide(0)" class="button">Государственные символы</a>
+      <a href="#" onclick="showSlide(1)" class="button">Конституция</a>
+      <a href="#" onclick="showSlide(2)" class="button">Уголовный кодекс</a>
+      <a href="#" onclick="showSlide(3)" class="button">Карты</a>
+      <a href="#" onclick="showSlide(4)" class="button">Информация</a>
+    </p>
+    
     <div class="slide" id="slide1" style="text-align: center;">
       <div class="line"> </div>
       
@@ -108,7 +133,7 @@
     </div>
     <div class="slide" id="slide2">
       <h2>Конституция</h2>
-      <p>Установить в формате  <a href="Cons.txt" download>TXT</a> <a href="Cons.pdf" download>PDF</a> <a href="Cons.docx" download>DOCX</a> </p>
+      <p>Установить в формате <a href="Cons.txt" download>TXT</a> <a href="Cons.pdf" download>PDF</a> <a href="Cons.docx" download>DOCX</a> </p>
       <embed src="Cons.pdf" type="application/pdf" width="100%" height="700px" />
     </div>
     <div class="slide" id="slide3">
@@ -119,11 +144,20 @@
       <h2>Карты</h2>
       <p>Здесь будет информация о картах Княжества Люксенштейн.</p>
     </div>
+    <div style="text-align: center; font-size: 17px; color: rgb(238, 238, 238); font-weight: bold;"  class="slide" id="slide5">
+    
+      <h2  style="color: black; font-weight: normal;" >Информация</h2>
+      <p style="background-color: #5c717e; padding: 15px; border-radius: 7px;">Люксенштейн - небольшое княжество известное своей богатой историей и культурным наследием а также сильной монархией на ряду с свободной демократией, является одним из самых маленьких суверенных государств в мире.</p>
+      <p style="background-color: #d1535f; padding: 15px; border-radius: 7px;">В Люксенштейне государственные символы играют важную роль в представлении национальной идентичности. Государственный флаг, представленный на сайте, символизирует княжескую власть и историческое наследие страны. Флаг, состоящий из горизонтальных полос с красной и синей окраской, выражает принадлежность к европейской культуре и традициям. </p>
+      <p style="background-color: #028daf; padding: 15px; border-radius: 7px;">Конституция Люксенштейна - это основной правовой документ страны, который определяет принципы правительства, защищает гражданские права и свободы, и устанавливает систему правопорядка. В разделе "Конституция" на сайте можно найти информацию о основных принципах и структуре правительства Люксенштейна.</p>
+      <p style="background-color: #226f22; padding: 15px; border-radius: 7px;">Уголовный кодекс Люксенштейна является основой для уголовного правосудия в стране. Этот раздел на сайте предоставляет информацию о различных преступлениях, их определении и наказаниях, а также о системе уголовного правосудия и процедурах судебных разбирательств.</p>
+        
+    </div>
   </div>
   
   <script>
     // Показать первый слайд по умолчанию
-    showSlide(0);
+    showSlide(4);
   </script>
 </body>
 </html>
